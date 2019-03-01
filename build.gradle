@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+	compileOnly "org.projectlombok:lombok:1.16.12"
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+}
+
