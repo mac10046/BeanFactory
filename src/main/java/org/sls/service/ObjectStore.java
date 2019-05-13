@@ -1,13 +1,16 @@
 package org.sls.service;
 
-import java.util.Optional;
+import java.util.Properties;
 
+/**
+ * Class implementing this interface is required to be scan for the beans
+ * creation and setup.
+ * 
+ * @author Abdeali Chandanwala
+ *
+ */
 public interface ObjectStore {
 
-  public Object getBean(Class clazz) throws ClassNotFoundException;
+  public Properties getProperties(String key);
 
-  public Object getBean(Class clazz, Object... args) throws ClassNotFoundException, IllegalArgumentException;
-
-  public Optional<String> getProperty(String key);
-  
 }
